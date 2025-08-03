@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ipy
-  version: 1.01
+  version: "1.01"
 
 package:
   name: ${{ name|lower }}
