@@ -2,18 +2,18 @@ schema_version: 1
 
 context:
   name: ipy
-  version: "1.01"
+  version: "1.2"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/IPy-${{ version }}.tar.gz
-  sha256: edeca741dea2d54aca568fa23740288c3fe86c0f3ea700344571e9ef14a7cc1a
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: c145e664e84642fac875a043fab1a0b50bd65297385dc438dbfe25f24e65ac61
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
